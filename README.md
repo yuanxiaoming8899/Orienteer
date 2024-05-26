@@ -1,80 +1,112 @@
-[![Build Status](https://travis-ci.org/OrienteerBAP/Orienteer.svg?branch=master)](https://travis-ci.org/OrienteerBAP/Orienteer) [![Coverage Status](https://coveralls.io/repos/github/OrienteerBAP/Orienteer/badge.svg)](https://coveralls.io/github/OrienteerBAP/Orienteer) [![Gitter](https://badges.gitter.im/OrienteerBAP/Orienteer.svg)](https://gitter.im/OrienteerBAP/Orienteer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Docker Pulls](https://img.shields.io/docker/pulls/orienteer/orienteer.svg)](https://hub.docker.com/r/orienteer/orienteer/) [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/OrienteerBAP/Orienteer/) 
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://travis-ci.org/OrienteerBAP/Orienteer" rel="nofollow"><img src="https://camo.githubusercontent.com/d5003fd17e12025b454bed55e61deedebecd096286c3c5bbd95e680d34d2dfc1/68747470733a2f2f7472617669732d63692e6f72672f4f7269656e746565724241502f4f7269656e746565722e7376673f6272616e63683d6d6173746572" alt="构建状态" data-canonical-src="https://travis-ci.org/OrienteerBAP/Orienteer.svg?branch=master" style="max-width: 100%;"></a> <a href="https://coveralls.io/github/OrienteerBAP/Orienteer" rel="nofollow"><img src="https://camo.githubusercontent.com/42a0f9889ebf78c6a76acc4507441c6051eb5a38376995d8a3b1b8a86661eb64/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f4f7269656e746565724241502f4f7269656e746565722f62616467652e737667" alt="覆盖状态" data-canonical-src="https://coveralls.io/repos/github/OrienteerBAP/Orienteer/badge.svg" style="max-width: 100%;"></a> <a href="https://gitter.im/OrienteerBAP/Orienteer?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge" rel="nofollow"><img src="https://camo.githubusercontent.com/a2b6112c51a67d88dbfcb7395ec37cd0436bc4ae8d9a61ad618dcbc92e1d3156/68747470733a2f2f6261646765732e6769747465722e696d2f4f7269656e746565724241502f4f7269656e746565722e737667" alt="吉特" data-canonical-src="https://badges.gitter.im/OrienteerBAP/Orienteer.svg" style="max-width: 100%;"></a> <a href="https://hub.docker.com/r/orienteer/orienteer/" rel="nofollow"><img src="https://camo.githubusercontent.com/d45d62a636eb190b93a4538b3f67840678572384736392b0e65ad1faa2db4632/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f6f7269656e746565722f6f7269656e746565722e737667" alt="Docker 拉取" data-canonical-src="https://img.shields.io/docker/pulls/orienteer/orienteer.svg" style="max-width: 100%;"></a> <a href="https://gitpitch.com/OrienteerBAP/Orienteer/" rel="nofollow"><img src="https://camo.githubusercontent.com/eecb1450abbae563ad2653e262f5f78842edcfd2c36ae10310e7817ff8dcdb7e/68747470733a2f2f67697470697463682e636f6d2f6173736574732f62616467652e737667" alt="GitPitch" data-canonical-src="https://gitpitch.com/assets/badge.svg" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定向越野运动员</font></font></h2><a id="user-content-orienteer" class="anchor" aria-label="固定链接：定向越野运动员" href="#orienteer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1396fa57053c432518a25acdb558e29f403409eeae53963f8157ae570f27881c/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f776f7264636c6f75642e706e67"><img src="https://camo.githubusercontent.com/1396fa57053c432518a25acdb558e29f403409eeae53963f8157ae570f27881c/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f776f7264636c6f75642e706e67" alt="定向越野词云" data-canonical-src="http://orienteerbap.github.io/Orienteer/images/wordcloud.png" style="max-width: 100%;"></a> <animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5e87cb4a803256b159d8bf64a25ec3786c92bae441ee0fdf68fd434a6773b7b8/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f6f766572766965772f73637265656e63617374732e676966" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/5e87cb4a803256b159d8bf64a25ec3786c92bae441ee0fdf68fd434a6773b7b8/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f6f766572766965772f73637265656e63617374732e676966" alt="截屏直播" data-canonical-src="http://orienteerbap.github.io/Orienteer/images/overview/screencasts.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://camo.githubusercontent.com/5e87cb4a803256b159d8bf64a25ec3786c92bae441ee0fdf68fd434a6773b7b8/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f6f766572766965772f73637265656e63617374732e676966" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="截屏直播" class="AnimatedImagePlayer-animatedImage" src="https://camo.githubusercontent.com/5e87cb4a803256b159d8bf64a25ec3786c92bae441ee0fdf68fd434a6773b7b8/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f6f766572766965772f73637265656e63617374732e676966" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="500" height="250"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="播放截屏视频" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="播放截屏视频">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开截屏视频" class="AnimatedImagePlayer-button" href="https://camo.githubusercontent.com/5e87cb4a803256b159d8bf64a25ec3786c92bae441ee0fdf68fd434a6773b7b8/687474703a2f2f6f7269656e746565726261702e6769746875622e696f2f4f7269656e746565722f696d616765732f6f766572766965772f73637265656e63617374732e676966" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是 Orienteer</font></font></h3><a id="user-content-what-is-orienteer" class="anchor" aria-label="永久链接：什么是 Orienteer" href="#what-is-orienteer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Orienteer</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是商业应用平台：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">轻松创建业务应用程序</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可扩展以满足您的需求</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动态数据模型</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">已启用 Rest/JSON</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发人员友好</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展和云就绪（支持 Docker）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://gitpitch.com/OrienteerBAP/Orienteer#/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Git 推介</font></font></a></h2><a id="user-content-git-pitch" class="anchor" aria-label="永久链接：Git Pitch" href="#git-pitch"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://orienteer.gitbooks.io/orienteer/content/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户指南</font></font></a></h2><a id="user-content-user-guide" class="anchor" aria-label="固定链接：用户指南" href="#user-guide"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><a href="https://demo.orienteer.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示站点</font></font></a></h2><a id="user-content-demo-site" class="anchor" aria-label="永久链接：演示站点" href="#demo-site"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定向车安装</font></font></h3><a id="user-content-orienteer-installation" class="anchor" aria-label="永久链接：Orienteer 安装" href="#orienteer-installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Orienteer 安装有 3 种选项：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">嵌入式（在应用服务器上）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">独立（无需应用服务器）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker</font></font></h4><a id="user-content-docker" class="anchor" aria-label="永久链接：Docker" href="#docker"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过命令 docker 运行新容器</font></font><code>run -p 8080:8080 orienteer/orienteer</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。如果需要，请调整此命令：</font></font></p>
+<p dir="auto"><code>-v &lt;runtime&gt;:/app/runtime</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 使用数据库、动态安装的模块等挂载运行时目录。</font></font></p>
+<p dir="auto"><code>-v &lt;maven&gt;:/root/m2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 挂载本地 Maven 存储库</font></font></p>
+<p dir="auto"><code>ORIENTDB_ADMIN_PASSWORD=&lt;password&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 默认指定管理员密码</font></font></p>
+<p dir="auto"><code>ORIENTDB_GUEST_PASSWORD=&lt;password&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 默认指定读者密码</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">嵌入式</font></font></h4><a id="user-content-embedded" class="anchor" aria-label="固定链接：嵌入" href="#embedded"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Orienteer 是 Java Servlet 3.1 Web 应用程序，可以安装在所有著名的兼容容器上：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">杰博斯</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Weblogic</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IBM WebSphere</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">雄猫</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">码头</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等等。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要以嵌入模式安装 Orienteer：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载最新的 orienteer.war</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 orienteer.war 放入应用服务器的部署文件夹中</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据你的环境配置orienteer.properties，放在同级目录或者以上</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行应用程序服务器</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">独立</font></font></h4><a id="user-content-standalone" class="anchor" aria-label="永久链接：独立" href="#standalone"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">独立模式下的 Orienteer 使用嵌入式 jetty 服务器自行运行。要以独立模式安装 Orienteer：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载最新的 orienteer-standalone.jar</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 orienteer-standalone.jar 放入任意目录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选地根据您的环境配置 orienteer.properties 并将其放在同一目录或更高目录中
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，Orienteer 将运行嵌入的 OrientDB 数据库</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以 身份运行 Orinteer </font></font><code>java -Xmx512m -Xms512m -jar orienteer-standalone.jar</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。可以相应调整 JVM 参数。可以提供其他应用程序参数：
+</font></font><ul dir="auto">
+<li><code> --config=&lt;filename&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 指定 orienteer 配置文件的路径</font></font></li>
+<li><code> --embedded</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 运行嵌入式 OrientDB 数据库</font></font></li>
+<li><code> --port=&lt;port number&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 在指定端口上运行 Orienteer（默认值：8080）</font></font></li>
+<li><code> --help</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 显示帮助</font></font></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Orienteer 初始配置</font></font></h4><a id="user-content-orienteer-initial-configuration" class="anchor" aria-label="永久链接：Orienteer 初始配置" href="#orienteer-initial-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">orienteer.properties</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是存储安装初始配置参数的主要文件。示例属性文件始终可</font></font><a href="https://github.com/OrienteerBAP/Orienteer/blob/master/orienteer.properties.sample"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到。</font></font></p>
+<div class="highlight highlight-source-ini notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">orienteer.production</span>=false  //Run Orienteer in production mode or not
+<span class="pl-k">orientdb.embedded</span>=false     //Run embedded OrientDB server?
+<span class="pl-k">orientdb.url</span>=remote:localhost/Orienteer   //OrientDB server URL
+<span class="pl-k">orientdb.guest.username</span>=reader               //Default OrientDB user (will be used for guests as well)
+<span class="pl-k">orientdb.guest.password</span>=reader               //Password for default OrientDB user
+<span class="pl-k">orientdb.admin.username</span>=admin    //OrientDB user to user for administrative stuff
+<span class="pl-k">orientdb.admin.password</span>=admin    //Password for OrientDB user used for administrative stuff
 
-## Orienteer
+<span class="pl-c"><span class="pl-c">#</span> Optional properties</span>
 
-![Orienteer Wordcloud](http://orienteerbap.github.io/Orienteer/images/wordcloud.png) ![Screencast](http://orienteerbap.github.io/Orienteer/images/overview/screencasts.gif)
+<span class="pl-c"><span class="pl-c">#</span>orientdb.rest.url=http://localhost:2480</span>
+<span class="pl-c"><span class="pl-c">#</span>plantuml.url=http://custom-plantuml-url</span>
+<span class="pl-c"><span class="pl-c">#</span>plantuml.showuml=false;</span>
 
-### What is Orienteer 
-
-**Orienteer** is Business Application Platform: 
-
-* Easy creation of business applications
-* Extendable to fit your needs
-* Dynamic datamodel
-* Rest/JSON enabled
-* Developers friendly
-* Scalling and cloud ready (support of Docker)
-
-## [Git Pitch](https://gitpitch.com/OrienteerBAP/Orienteer#/)
-## [User Guide](https://orienteer.gitbooks.io/orienteer/content/)
-## [Demo Site](https://demo.orienteer.org)
-
-### Orienteer installation
-
-There are 3 options for Orienteer installation:
-
-- Docker
-- Embedded (on application server)
-- Standalone (no need in application server)
-
-#### Docker
-
-Run new container by command docker `run -p 8080:8080 orienteer/orienteer`. Adjust this command if needed:
-
-`-v <runtime>:/app/runtime` - mount runtime directory with databases, dynamically installed modules and etc.
-
-`-v <maven>:/root/m2` - mount your local maven repository
-
-`ORIENTDB_ADMIN_PASSWORD=<password>` - specify admin password by default
-
-`ORIENTDB_GUEST_PASSWORD=<password>` - specify reader password by default
-
-#### Embedded
-
-Orienteer is Java Servlet 3.1 web application and can be installed on all famous compatible containers:
-
-- Jboss
-- Weblogic
-- IBM WebSphere
-- Tomcat
-- Jetty
-- and etc.
-
-To install Orienteer in embedded mode:
-- Download latest orienteer.war
-- Put orienteer.war into deployment folder for your application server
-- Configure orienteer.properties according to your environment and place it in the same directory or above
-- Run application server
-
-#### Standalone
-
-Orienteer in standalone mode use embedded jetty server to run yourself. To install Orienteer in standalone mode:
-- Download latest orienteer-standalone.jar
-- Put orienteer-standalone.jar into any directory
-- Optionally configure orienteer.properties accordging to your environment and place it in the same directory or above
-  - By default, Orienteer, will run OrientDB database embedded
-- Run Orinteer as ```java -Xmx512m -Xms512m -jar orienteer-standalone.jar```. JVM parameters can be adjusted accordingly. Additional application parameters can be supplied:
-  - ``` --config=<filename>``` - specification of path to orienteer configuration file
-  - ``` --embedded``` - run embedded OrientDB database
-  - ``` --port=<port number>``` - run Orienteer on specified port (Default: 8080)
-  - ``` --help``` - display help
-
-#### Orienteer initial configuration
-
-**orienteer.properties** is the main file to store initial configuration paramenters for your installation. Sample properties file can be always found [here](https://github.com/OrienteerBAP/Orienteer/blob/master/orienteer.properties.sample).
-
-```properties
-orienteer.production=false  //Run Orienteer in production mode or not
+<span class="pl-c"><span class="pl-c">#</span>webjars.readFromCacheTimeout=5 seconds</span>
+<span class="pl-c"><span class="pl-c">#</span>webjars.useCdnResources=true</span>
+<span class="pl-c"><span class="pl-c">#</span>webjars.cdnUrl=//maxcdn.bootstrapcdn.com:80</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="orienteer.production=false  //Run Orienteer in production mode or not
 orientdb.embedded=false     //Run embedded OrientDB server?
 orientdb.url=remote:localhost/Orienteer   //OrientDB server URL
 orientdb.guest.username=reader               //Default OrientDB user (will be used for guests as well)
@@ -90,47 +122,85 @@ orientdb.admin.password=admin    //Password for OrientDB user used for administr
 
 #webjars.readFromCacheTimeout=5 seconds
 #webjars.useCdnResources=true
-#webjars.cdnUrl=//maxcdn.bootstrapcdn.com:80
-```
-
-### Setup of development environment 
-
-#### Prerequisites
-1. java 8+
-2. git
-3. maven
-4. OrientDB, if you want to use OrientDB remotely
-
-#### Steps
-
-##### Install of [wicket-orientdb](https://github.com/OrienteerBAP/wicket-orientdb) github SNAPSHOT
-
-This step is optional: [wicket-orientdb](https://github.com/OrienteerBAP/wicket-orientdb) SNAPSHOT always available on Maven central
-
-```
-git clone <your fork URL for wicket-orientdb>
+#webjars.cdnUrl=//maxcdn.bootstrapcdn.com:80" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发环境设置</font></font></h3><a id="user-content-setup-of-development-environment" class="anchor" aria-label="永久链接：开发环境设置" href="#setup-of-development-environment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先决条件</font></font></h4><a id="user-content-prerequisites" class="anchor" aria-label="永久链接：先决条件" href="#prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java 8+</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">git</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">maven</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OrientDB，如果你想远程使用 OrientDB</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">脚步</font></font></h4><a id="user-content-steps" class="anchor" aria-label="固定链接：步骤" href="#steps"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font><a href="https://github.com/OrienteerBAP/wicket-orientdb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wicket-orientdb</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> github SNAPSHOT</font></font></h5><a id="user-content-install-of-wicket-orientdb-github-snapshot" class="anchor" aria-label="永久链接：安装 wicket-orientdb github SNAPSHOT" href="#install-of-wicket-orientdb-github-snapshot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此步骤是可选的：</font></font><a href="https://github.com/OrienteerBAP/wicket-orientdb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wicket-orientdb</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> SNAPSHOT 始终在 Maven central 上可用</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>git clone &lt;your fork URL for wicket-orientdb&gt;
 cd wicket-orientdb
 mvn clean install
-```
-
-##### Install Orienteer
-```
-cd ..
-git clone <your fork URL for Orienteer>
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone <your fork URL for wicket-orientdb>
+cd wicket-orientdb
+mvn clean install" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 Orienteer</font></font></h5><a id="user-content-install-orienteer" class="anchor" aria-label="永久链接：安装 Orienteer" href="#install-orienteer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>cd ..
+git clone &lt;your fork URL for Orienteer&gt;
 cd Orienteer
 mvn clean install
-```
-##### Modify orienteer.properties file
-See configuration section above
-
-##### Code compilation
-```
-mvn clean install
-```
-##### Run jetty server by command
-```
-mvn jetty:run
-```
-##### Goto the application
-Open http://localhost:8080 is in your browser
-
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="cd ..
+git clone <your fork URL for Orienteer>
+cd Orienteer
+mvn clean install" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改 orienteer.properties 文件</font></font></h5><a id="user-content-modify-orienteerproperties-file" class="anchor" aria-label="永久链接：修改 orienteer.properties 文件" href="#modify-orienteerproperties-file"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参见上面的配置部分</font></font></p>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码编译</font></font></h5><a id="user-content-code-compilation" class="anchor" aria-label="永久链接：代码编译" href="#code-compilation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>mvn clean install
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mvn clean install" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过命令运行jetty服务器</font></font></h5><a id="user-content-run-jetty-server-by-command" class="anchor" aria-label="永久链接：通过命令运行jetty服务器" href="#run-jetty-server-by-command"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>mvn jetty:run
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mvn jetty:run" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前往应用程序</font></font></h5><a id="user-content-goto-the-application" class="anchor" aria-label="永久链接：转至应用程序" href="#goto-the-application"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在浏览器中</font><font style="vertical-align: inherit;">打开</font></font><a href="http://localhost:8080" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:8080</font></font></a><font style="vertical-align: inherit;"></font></p>
+</article></div>
